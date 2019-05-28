@@ -9,7 +9,7 @@ Homepage: http://www.lliurex.net
 
 Package: lmd-client
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ltsp-client, ldm-lliurex-theme, jwm, idesk, feh, python, home-linker, home-linker-ldm-client, mate-screensaver-disabler
+Depends: ${shlibs:Depends}, ${misc:Depends}, ltsp-client, ldm-lliurex-theme, jwm, idesk, feh, python, home-linker, home-linker-ldm-client
 Conflicts: lliurex-ltsp-client
 Replaces: lliurex-ltsp-client
 Description: LliureX Linux Terminal Server Client basic install.
