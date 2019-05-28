@@ -1,3 +1,9 @@
+lmd-client (0.53) bionic; urgency=medium
+
+  * First bionic release
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 28 May 2019 14:51:27 +0200
+
 lmd-client (0.52) xenial; urgency=high
 
   * Fixed postinst 
