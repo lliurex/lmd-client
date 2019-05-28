@@ -1,0 +1,279 @@
+lmd-client (0.52) xenial; urgency=high
+
+  * Fixed postinst 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 02 Nov 2017 12:40:47 +0100
+
+lmd-client (0.51) xenial; urgency=high
+
+  * Adding support for promethean boards 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 31 Oct 2017 13:18:21 +0100
+
+lmd-client (0.50) xenial; urgency=high
+
+  * Fixed ltspe_edit_command.sh to avoid break xpra
+
+ -- Jose A. Murcia <joamuran@gmail.com>  Mon, 24 Jul 2017 12:15:44 +0200
+
+lmd-client (0.49) xenial; urgency=high
+
+  * Fixing teacher share mount
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 21 Jun 2017 13:50:39 +0200
+
+lmd-client (0.48) xenial; urgency=high
+
+  * Adding forceuid and forcegid to semithin clients mount options
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 14 Jun 2017 16:57:12 +0200
+
+lmd-client (0.47) xenial; urgency=high
+
+  * Using LDM_SERVER instead of server when mounting
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 06 Jun 2017 14:33:00 +0200
+
+lmd-client (0.46) xenial; urgency=high
+
+  * Added umount for semi-thin clients
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 29 May 2017 17:01:20 +0200
+
+lmd-client (0.45) xenial; urgency=high
+
+  * trying to force keymap when executing lmd gui editing calls in semithin clients.
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 04 May 2017 13:48:18 +0200
+
+lmd-client (0.44) xenial; urgency=high
+
+  * Allowing teachers access to students home mount point
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 15 Mar 2017 11:45:22 +0100
+
+lmd-client (0.43) xenial; urgency=medium
+
+  * Added mate-ltsp-desktop.sh and ltsp_edit_command.sh on sbin
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Thu, 08 Dec 2016 20:56:45 +0100
+
+lmd-client (0.42) xenial; urgency=medium
+
+  * Added mate-screensaver-disabler into depends
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Fri, 11 Nov 2016 13:16:13 +0100
+
+lmd-client (0.41) xenial; urgency=high
+
+  * Adding samba mount support to fat clients
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 10 Nov 2016 14:13:44 +0100
+
+lmd-client (0.40) xenial; urgency=high
+
+  * Adding homelinker ldm dependency
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 08 Nov 2016 12:40:56 +0100
+
+lmd-client (0.39) xenial; urgency=medium
+
+  * Fix bug of whisker Menu config in semi-light clients
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 04 Oct 2016 16:45:39 +0200
+
+lmd-client (0.38) xenial; urgency=high
+
+  * Deleting ./install/usr/share/ldm/rc.d/X94-home-linker 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Thu, 29 Sep 2016 12:17:24 +0200
+
+lmd-client (0.37) xenial; urgency=high
+
+  * New X94-home-linker 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 19 Sep 2016 13:29:50 +0200
+
+lmd-client (0.36) xenial; urgency=medium
+
+  * Changed dependency and editing images window manager 
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 24 May 2016 17:43:24 +0200
+
+lmd-client (0.35-lliurex1) xenial; urgency=medium
+
+  * Updated start kernel parameters cmdline for xenial
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 07 Apr 2016 08:55:37 +0200
+
+lmd-client (0.35) xenial; urgency=medium
+
+  * Fixed X startup
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 09 Mar 2016 13:50:38 +0100
+
+lmd-client (0.34) xenial; urgency=medium
+
+  * Copy trusty code into xenial
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 09 Feb 2016 17:20:09 +0100
+
+lmd-client (0.31) trusty; urgency=high
+
+  * Fixed umask
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 18 Nov 2015 14:53:49 +0100
+
+lmd-client (0.30) trusty; urgency=high
+
+  * Localapps creates /net directory before mounting
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 11 Jun 2015 09:24:42 +0200
+
+lmd-client (0.29) trusty; urgency=high
+
+  * Fixing homework harvester for semi clients
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 08 Jun 2015 09:29:53 +0200
+
+lmd-client (0.28) trusty; urgency=high
+
+  * Fixing cups client on semi-thin clients
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 04 Jun 2015 09:50:12 +0200
+
+lmd-client (0.27) trusty; urgency=high
+
+  * Updated background
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 20 May 2015 15:24:57 +0200
+
+lmd-client (0.26) trusty; urgency=high
+
+  * Added new background 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 20 May 2015 14:41:31 +0200
+
+lmd-client (0.25) trusty; urgency=high
+
+  * Fixed .ideskrc to add transparency to icons and remove when mouseover
+  * Fixed .ideskrc to enable double click to launch applications
+
+ -- José A. Murcia <joamuran@gmail.com>  Wed, 29 Apr 2015 13:10:56 +0200
+
+lmd-client (0.24) trusty; urgency=high
+
+  * Execute new path of home-linker
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 19 Nov 2014 09:22:47 +0100
+
+lmd-client (0.23) trusty; urgency=high
+
+  * Adding background localization
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 18 Nov 2014 08:44:47 +0100
+
+lmd-client (0.22) trusty; urgency=high
+
+  * Switch LDM background if start how thin client or fat client
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 06 Nov 2014 17:37:53 +0100
+
+lmd-client (0.21) trusty; urgency=high
+
+  * Added script get_hosts in /usr/share/ltsp/ to add ip in LDM_SERVER
+    variable
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 30 Oct 2014 14:10:27 +0100
+
+lmd-client (0.20) trusty; urgency=high
+
+  * Upload to Trusty
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 07 Oct 2014 17:49:49 +0200
+
+lmd-client (0.14) precise; urgency=high
+
+  * remove i386 from script
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 10 Sep 2014 13:55:15 +0200
+
+lmd-client (0.13) precise; urgency=high
+
+  * Language LDM is selectable from lts.conf file
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 10 Sep 2014 09:21:49 +0200
+
+lmd-client (0.12) precise; urgency=high
+
+  * Added support to multiples lts.conf files
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 09 Sep 2014 12:48:18 +0200
+
+lmd-client (0.11) precise; urgency=high
+
+  * Modified lliurex 14 background for editing with awesome
+
+ -- Jose A. <joamuran@gmail.com>  Wed, 02 Jul 2014 13:48:30 +0200
+
+lmd-client (0.10) precise; urgency=high
+
+  * Updated with home-link
+  * Update diversion of Localapp
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 25 Jun 2014 09:51:56 +0200
+
+lmd-client (0.9) precise; urgency=high
+
+  * Replaced gnome-terminal by xterm
+  * Removed llum
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Fri, 02 May 2014 11:58:28 +0200
+
+lmd-client (0.8) precise; urgency=high
+
+  * Removed provides in control
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Wed, 30 Apr 2014 12:25:40 +0200
+
+lmd-client (0.7) precise; urgency=high
+
+  * Added idesktop and modified launch script
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Wed, 30 Apr 2014 11:57:16 +0200
+
+lmd-client (0.6) precise; urgency=high
+
+  * Fixed diversion
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Wed, 30 Apr 2014 11:02:46 +0200
+
+lmd-client (0.5) precise; urgency=high
+
+  * Added diversion
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 24 Apr 2014 13:00:11 +0200
+
+lmd-client (0.4) precise; urgency=high
+
+  * Added /etc/ltsp/update-kernels.conf
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Wed, 23 Apr 2014 14:38:08 +0200
+
+lmd-client (0.3) precise; urgency=high
+
+  * Added awesome scripts
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Tue, 22 Apr 2014 14:28:34 +0200
+
+lmd-client (0.2) precise; urgency=high
+
+  * Fixed conflicts
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Wed, 16 Apr 2014 11:40:56 +0200
+
+lmd-client (0.1) precise; urgency=low
+
+  * Initial Release.
+
+ -- Jose Alfredo Murcia Andres <joamuran@gmail.com>  Mon, 31 Mar 2014 10:05:33 +0200

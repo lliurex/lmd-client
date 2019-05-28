@@ -1,0 +1,17 @@
+Source: lmd-client
+Section: utils
+Priority: extra
+Maintainer: LliureX Team <lliurex@gva.es>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.5
+Homepage: http://www.lliurex.net
+#Vcs-Svn: http://svn.lliurex.net/pandora/lmd-client
+
+Package: lmd-client
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ltsp-client, ldm-lliurex-theme, jwm, idesk, feh, python, home-linker, home-linker-ldm-client, mate-screensaver-disabler
+Conflicts: lliurex-ltsp-client
+Replaces: lliurex-ltsp-client
+Description: LliureX Linux Terminal Server Client basic install.
+ This package install thin clients
+ in a LliureX Classroom.
