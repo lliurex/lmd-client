@@ -1,0 +1,11 @@
+table Icon
+  Caption: Editor
+  CaptionTip: Edita un fitxer
+  Command: scite
+  Icon: /var/lib/ltsp-awesome-desktop/icons/accessories-text-editor.png
+  Width: 48
+  Height: 48
+  X: 139
+  Y: 134
+end
+

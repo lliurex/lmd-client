@@ -1,0 +1,11 @@
+table Icon
+  Caption: LliureX Up
+  CaptionTip: Actualitza el sistema
+  Command: lliurex-up
+  Icon: /var/lib/ltsp-awesome-desktop/icons/lliurex-up.png
+  Width: 48
+  Height: 48
+  X: 219
+  Y: 134
+end
+

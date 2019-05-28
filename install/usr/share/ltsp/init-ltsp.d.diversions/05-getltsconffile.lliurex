@@ -1,0 +1,40 @@
+# get the lts.conf via tftp
+
+# $filename comes from net-eth0.conf and is usually "/<path>/pxelinux.0".
+# If it contains a path, we want to construct "/<path>/lts.conf".
+# If it doesn't, we want just "lts.conf" without inserting a slash, as some tftp
+# servers have problems with it. Finally, if $filename isn't set, we want to
+# default to "/ltsp/i386/lts.conf".
+if [ -n "$SERVER" ]; then
+    fileonly=${filename##*/}
+    pathonly=${filename%$fileonly}
+    global_lts_conf_temp=$(mktemp)
+    local_lts_conf_temp=$(mktemp)
+    lts_conf_temp=$(mktemp)
+    flavour_name=$(basename "$NBD_ROOT_NAME")
+    #tftp "$SERVER" -c get ${pathonly:-/ltsp/i386/}lts.conf $lts_conf_temp >/dev/null
+    if [ $LTSCONF ]; then
+        tftp "$SERVER" -c get ${pathonly:-/ltsp/}${LTSCONF:-"lts.conf"} $lts_conf_temp >/dev/null
+    else
+        tftp "$SERVER" -c get ${pathonly:-/ltsp/}lts.conf $global_lts_conf_temp > /dev/null
+        EXISTLOCAL=$(tftp "$SERVER" -c get ${pathonly:-/ltsp/}${flavour_name}/lts.conf $local_lts_conf_temp | grep -q "Error code 1"; echo $?)
+        if [ "$MERGELTSCONF" != "false" ]; then
+            ltsmerger $global_lts_conf_temp $local_lts_conf_temp > $lts_conf_temp 
+        else
+            if [ "$EXISTLOCAL" = "0" ]; then
+                mv $global_lts_conf_temp $lts_conf_temp
+            else
+                mv $local_lts_conf_temp $lts_conf_temp
+            fi
+        fi
+    fi
+    # only overwrite lts.conf if it has non-zero size.
+    if [ -s "$lts_conf_temp" ]; then
+        mv "$lts_conf_temp" /etc/lts.conf
+    else
+        rm "$lts_conf_temp"
+    fi
+fi
+
+# Get the lts.conf vars into the environment
+. /usr/share/ltsp/ltsp_config
