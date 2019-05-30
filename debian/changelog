@@ -1,3 +1,9 @@
+lmd-client (0.55) bionic; urgency=medium
+
+  * Forcing plasma.desktop as default session
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 30 May 2019 15:37:59 +0200
+
 lmd-client (0.54) bionic; urgency=medium
 
   * Fixing get_hosts script
