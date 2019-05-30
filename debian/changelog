@@ -1,4 +1,4 @@
-lmd-client (0.55.1) bionic ; urgency=medium
+lmd-client (0.55.1) bionic; urgency=medium
 
   * Fixed variable name in init-ltsp.d source script
 
