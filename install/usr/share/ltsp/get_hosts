@@ -1,3 +1,3 @@
 #!/bin/sh
-. /var/cache/ltsp/ltsp_config
+. /var/run/ltsp/ltsp_config
 echo "server $SERVER"
