@@ -1,3 +1,9 @@
+lmd-client (0.55.1) bionic ; urgency=medium
+
+  * Fixed variable name in init-ltsp.d source script
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 30 May 2019 16:18:21 +0200
+
 lmd-client (0.55) bionic; urgency=medium
 
   * Forcing plasma.desktop as default session
