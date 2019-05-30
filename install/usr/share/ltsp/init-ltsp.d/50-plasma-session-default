@@ -2,7 +2,7 @@
 mkdir -p /var/lib/sddm || true
 SDDM_FILE="/var/lib/sddm/state.conf"
 
-cat > $DESKTOP_FILE << EOF
+cat > $SDDM_FILE << EOF
 [Last]
 Session=/usr/share/xsessions/plasma.desktop
 
