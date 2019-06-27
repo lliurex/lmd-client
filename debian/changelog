@@ -1,3 +1,9 @@
+lmd-client (0.55.2) bionic; urgency=medium
+
+  * Updated update-kernels file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 27 Jun 2019 10:18:27 +0200
+
 lmd-client (0.55.1) bionic; urgency=medium
 
   * Fixed variable name in init-ltsp.d source script
