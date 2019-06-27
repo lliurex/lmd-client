@@ -16,7 +16,7 @@ ONTIMEOUT=ltsp-NBD
 BOOT_METHODS="NBD"
 
 # Default commandline arguments common to all boot methods
-CMDLINE_LINUX_DEFAULT="init=/sbin/init-ltsp quiet splash plymouth:force-splash vt.handoff=7 net.ifnames=0 vga=791"
+CMDLINE_LINUX_DEFAULT="init=/sbin/init-ltsp forcepae quiet splash plymouth:force-splash vt.handoff=7 net.ifnames=0 vga=791"
 
 # Commandline used with NFS root
 #CMDLINE_NFS="root=/dev/nfs ip=dhcp boot=nfs"
@@ -24,6 +24,14 @@ CMDLINE_LINUX_DEFAULT="init=/sbin/init-ltsp quiet splash plymouth:force-splash v
 # Commandline used with NBD root
 # { server } and { nbd_id } will be replaced in boot.php
 CMDLINE_NBD="root=/dev/nbd0 nbdroot={server}:{nbd_id}"
+
+# A sed expression that matches all kernels and returns $FILE $NAME $VERSION $FLAVOR
+# Example: ls /boot | sed -n "$KERNEL_NAMES" | sort -k 4,4V -k 3,3rV
+KERNEL_NAMES='s/\(vmlinu[xz]-\)\([^-]*-[^-]*-\)\(.*\)/& \1 \2 \3/p'
+
+# A sed expression that maps from a kernel name to an initrd name
+# Example: initrd=$(echo "$FILE" | sed -n "$INITRD_NAME")
+INITRD_NAME='s/vmlinu[xz]/initrd.img/p'
 
 # Kernel variants
 KERNEL_PREFIX="vmlinu[z|x]-*"
