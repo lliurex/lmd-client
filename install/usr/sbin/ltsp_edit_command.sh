@@ -4,12 +4,14 @@ export HOME=/root
 export LANG="es_ES.UTF-8"
 
 a=0
-while [[ ! -z $(xhost -) ]]
+while [[ $a -le 60 ]]
 do 
 	let a=$a+1
-	[[ $a -gt 10 ]] && break
+	xhost - 2>/dev/null && break
 	sleep 1
 done
+
+echo "$a" > /tmp/disp
 
 eval "( setxkbmap -model pc105 -rules evdev -layout es -variant cat ) &"
 eval "( $@ )"
