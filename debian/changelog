@@ -1,3 +1,9 @@
+lmd-client (0.56) bionic; urgency=medium
+
+  * Fix sessions.
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 11 Jul 2019 13:23:11 +0200
+
 lmd-client (0.55.2) bionic; urgency=medium
 
   * Updated update-kernels file
