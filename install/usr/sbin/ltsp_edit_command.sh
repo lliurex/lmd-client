@@ -11,7 +11,5 @@ do
 	sleep 1
 done
 
-echo "$a" > /tmp/disp
-
 eval "( setxkbmap -model pc105 -rules evdev -layout es -variant cat ) &"
 eval "( $@ )"

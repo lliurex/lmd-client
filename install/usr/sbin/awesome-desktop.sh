@@ -10,7 +10,6 @@ do
 	xhost - 2>/dev/null && break
 	sleep 1
 done
-echo "$a" > /tmp/disp
 
 #eval "( awesome --config /var/lib/ltsp-awesome-desktop/rc.lua ) &"
 eval "( setxkbmap -model pc105 -rules evdev -layout es -variant cat ) &"
