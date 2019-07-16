@@ -1,3 +1,9 @@
+lmd-client (0.56.1) bionic; urgency=medium
+
+  * update background for jwm session
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 16 Jul 2019 13:18:09 +0200
+
 lmd-client (0.56) bionic; urgency=medium
 
   * Fix sessions.
