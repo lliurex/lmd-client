@@ -22,6 +22,7 @@ allowed_services() {
 rm_services="$(allowed_services "$RM_SYSTEM_SERVICES
 alsa-restore          # Restore sound card(s') mixer state(s)
 alsa-store            # Save sound card(s') mixer state(s)
+apparmor              # AppArmor initialization
 dnsmasq               # A lightweight DHCP and caching DNS server
 exim4                 # exim4 Mail Transport Agent
 grub-common           # Record successful boot for GRUB
@@ -51,7 +52,6 @@ if ! boolean_is_true "$LTSP_FATCLIENT"; then
     rm_services="$rm_services $(allowed_services "$RM_THIN_SYSTEM_SERVICES
 accounts-daemon       # Accounts Service
 acpid                 # ACPI daemon
-apparmor              # AppArmor initialization
 apport                # Automatic crash report generation
 atd                   # Deferred execution scheduler
 avahi-daemon          # mDNS/DNS-SD daemon
