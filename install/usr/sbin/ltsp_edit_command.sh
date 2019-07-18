@@ -12,4 +12,5 @@ do
 done
 
 eval "( setxkbmap -model pc105 -rules evdev -layout es -variant cat ) &"
-eval "( $@ )"
+eval "( $@ & )"
+eval "( kwin --replace )"
