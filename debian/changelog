@@ -1,3 +1,9 @@
+lmd-client (0.57) bionic; urgency=medium
+
+  * ltsp_edit_command.sh launches kwin after main command
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 18 Jul 2019 14:07:24 +0200
+
 lmd-client (0.56.2) bionic; urgency=medium
 
   * Add apparmor to rm-services 
