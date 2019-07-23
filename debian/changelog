@@ -1,3 +1,9 @@
+lmd-client (0.58) bionic; urgency=medium
+
+  * chmod 644 to lts.conf
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 23 Jul 2019 09:08:58 +0200
+
 lmd-client (0.57) bionic; urgency=medium
 
   * ltsp_edit_command.sh launches kwin after main command
