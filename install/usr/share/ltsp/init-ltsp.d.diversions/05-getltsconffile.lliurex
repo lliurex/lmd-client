@@ -36,5 +36,9 @@ if [ -n "$SERVER" ]; then
     fi
 fi
 
+if [ -e /etc/lts.conf ]; then
+	chmod 644 /etc/lts.conf
+fi
+
 # Get the lts.conf vars into the environment
 . /usr/share/ltsp/ltsp_config
