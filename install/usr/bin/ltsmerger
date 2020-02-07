@@ -1,12 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-import ConfigParser
+import configparser
 import sys
 
 
 if len(sys.argv)!=3:
-	print "USAGE:"
-	print "\tltsmerger global_ltsconf local_ltsconf"
+	print ("USAGE:")
+	print ("\tltsmerger global_ltsconf local_ltsconf")
 	sys.exit(0)
 
 
@@ -78,19 +78,19 @@ try:
 
 
 
-	print "[Default]"
+	print ("[Default]")
 	for option in new_cfg["Default"]:
-		print "%s = %s"%(option[0],option[1])
+		print ("%s = %s"%(option[0],option[1]))
 	
 	for section in new_cfg:
 		if section.lower() != "default":
-			print "[%s]"%section
+			print ("[%s]"%section)
 			for option in new_cfg[section]:
-				print "%s = %s"%(option[0],option[1])
+				print ("%s = %s"%(option[0],option[1]))
 			
 except Exception as e:
 	
-	print "# Exception when merging lts.conf files"
-	print "# Exception: ", str(e).strip('\n')
-	print "[Default]"
+	print ("# Exception when merging lts.conf files")
+	print ("# Exception: ", str(e).strip('\n'))
+	print ("[Default]")
 	
