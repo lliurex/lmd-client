@@ -1,3 +1,9 @@
+lmd-client (0.60) bionic; urgency=medium
+
+  * Migrated to python3
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 07 Feb 2020 13:51:17 +0100
+
 lmd-client (0.58) bionic; urgency=medium
 
   * chmod 644 to lts.conf
